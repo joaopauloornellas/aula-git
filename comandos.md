@@ -32,6 +32,7 @@ git add .
 ```bash
 git commit -m "Escrever a mensagem""
 
+####
 git push -u   ##### para salvar o arquivo no site
-
+####
 git pull baixar o arquivo
