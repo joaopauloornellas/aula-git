@@ -32,4 +32,4 @@ git add .
 ```bash
 git commit -m "Escrever a mensagem""
 
-git 
+git push 
