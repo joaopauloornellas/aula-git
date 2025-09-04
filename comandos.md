@@ -1,7 +1,9 @@
 # Comandos Git
 Neste arquivos será apresentado os comandos git para uso futuro
 
-## No primeiro uso em um computador para que o GIT avise e saiba quem fez as alterações é necessário configurar o usuário nas configurações globas do git. 
+## No primeiro uso em um computador 
+Para que o GIT avise e saiba quem fez as alterações é necessário configurar o usuário nas configurações globas do git. 
+
 ```bash
 
 git config --global user.name "João Paulo dos Santos Ornellas"
@@ -9,26 +11,43 @@ git config --global user.name "João Paulo dos Santos Ornellas"
 git config --global user.email "jpaulo.it@gmail.com"
 ```
 
-### Estando dentro de uma pasta use o comando abaixo para inicia o git. Somente da primeira vez
+### Comandos para gestao do Git
+Para inicializar uma pasta como repositório git usamos o comando init.
+Só utilizamos este comando 1 vez.
+
 ```bash
 git init
 ```
 
-#### Após a inicializacao devemos digitar o comando code ./ e o nome do arquivo como no exemplo abaixo.
-```bash
-code ./comandos-md
-```
+#### Para ver a situação do repositório utilizamos o comando status.
+Ele pode ser executado a qualquer momento para saber a situação da pasta.
+Se estiver vermelho precisa adicionar o arquivo, se estiver verde estão prontos 
+para salvar (commit).
+Se não aparecer nada, ou o arquivo não está salvo ou já está tudo ok.
 
-##### Para consultar o status do git usar o comando, onde iremos verificar que o git nao estara add, constando em vermelho.
 ```bash
 git status
 ```
-###### Em seguida devemos add o git com o comando abaixo
+
+### Para adicionar todos os arquivos modificados para serem versionados utilizamos o add
+**IMPORTANTE:** Tem que ser executado sempre que no status houver arquivos em vermelho
 ```bash
 git add .
 ```
 
-###### git commit -m usamos para dar instrucoes ao usuario
+### Para criar uma versão de tudo que foi modificado até aquele momento utilizamos o commit. 
+**IMPORTANTE:** no -m temos que colocar uma mensagem do porque estamos salvando.
 ```bash
-git commit -m "Escrever a mensagem""
+git commit -m "Porque estou salvando estas alterações"
+```
 
+### Git push envia os commits do pc para o Github
+```bash
+git push
+```
+
+
+### PULL baixa todas as atualizações que o repositório tem no Github e não está no seu pc.
+```bash
+git pull
+```
