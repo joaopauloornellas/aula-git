@@ -1,8 +1,8 @@
 # Comandos Git
-Neste arquivos será apresentado os comandos git para uso futuro
+Neste arquivo será apresentado os comandos git para uso futuro
 
 ## No primeiro uso em um computador 
-Para que o GIT avise e saiba quem fez as alterações é necessário configurar o usuário nas configurações globas do git. 
+Para que o GIT avise e saiba quem fez as alterações é necessário configurar o usuário nas configurações globais do git. 
 
 ```bash
 
@@ -11,7 +11,7 @@ git config --global user.name "João Paulo dos Santos Ornellas"
 git config --global user.email "jpaulo.it@gmail.com"
 ```
 
-### Comandos para gestao do Git
+### Comandos para gestão do Git
 Para inicializar uma pasta como repositório git usamos o comando init.
 Só utilizamos este comando 1 vez.
 
@@ -50,4 +50,11 @@ git push
 ### PULL baixa todas as atualizações que o repositório tem no Github e não está no seu pc.
 ```bash
 git pull
+```
+
+## Alteração de nome do arquivo comandos.md para Readme.md
+```bash
+git mv comandos.md Readme.md
+
+git commit -m "Renamed comandos.md to Readme.md"
 ```
